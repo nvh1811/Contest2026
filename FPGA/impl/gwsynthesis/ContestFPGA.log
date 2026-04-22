@@ -1,0 +1,13 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\sync_debounce.v'
+Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\tb_normal_kick.v'
+Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\watchdog_core.v'
+Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\watchdog_main.v'
+Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\tb_disable.v'
+Compiling module 'tb_disable'("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":3)
+WARN  (EX2629) : Delay control is not supported for synthesis("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":29)
+ERROR (EX3718) : Loop count limit of 2000 was exceeded, forever loop never breaks("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":29)
+WARN  (EX3780) : Using initial value of 'clk' since it is never assigned("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":30)
+Module 'tb_disable' remains a black box due to errors in its contents("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":3)
+GowinSynthesis finish

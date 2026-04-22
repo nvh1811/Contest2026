@@ -1,0 +1,1 @@
+debounce button: https://www.fpga4student.com/2017/04/simple-debouncing-verilog-code-for.html

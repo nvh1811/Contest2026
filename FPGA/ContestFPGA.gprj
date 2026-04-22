@@ -1,0 +1,16 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NSR-4C" pn="GW1NSR-LV4CQN48PC7/I6">gw1nsr4c-009</Device>
+    <FileList>
+        <File path="src/sync_debounce.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_disable.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_disable_to_enable.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_normal_kick.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_timeout.v" type="file.verilog" enable="1"/>
+        <File path="src/watchdog_core.v" type="file.verilog" enable="1"/>
+        <File path="src/watchdog_main.v" type="file.verilog" enable="1"/>
+    </FileList>
+</Project>

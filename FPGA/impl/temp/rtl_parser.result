@@ -1,0 +1,44 @@
+[
+ {
+  "InstFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+  "InstLine" : 1,
+  "InstName" : "debounce_button",
+  "ModuleFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "debounce_button",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "InstLine" : 5,
+    "InstName" : "u1",
+    "ModuleFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "ModuleLine" : 14,
+    "ModuleName" : "clock_enable"
+   },
+   {
+    "InstFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "InstLine" : 6,
+    "InstName" : "d0",
+    "ModuleFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "my_dff_en"
+   },
+   {
+    "InstFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "InstLine" : 8,
+    "InstName" : "d1",
+    "ModuleFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "my_dff_en"
+   },
+   {
+    "InstFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "InstLine" : 9,
+    "InstName" : "d2",
+    "ModuleFile" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "my_dff_en"
+   }
+  ]
+ }
+]

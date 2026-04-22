@@ -1,0 +1,218 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/FPGA/Tools
+vclock_enable
+Z0 !s110 1776610874
+!i10b 1
+!s100 1z7F1Bo9^>SNGKcnGF>4T3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA`DD07oZUkFIf[Tai1LUQ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/FPGA/Project/ContestFPGA/sim
+Z4 w1776590056
+Z5 8D:/FPGA/Project/ContestFPGA/src/sync_debounce.v
+Z6 FD:/FPGA/Project/ContestFPGA/src/sync_debounce.v
+!i122 7
+L0 40 18
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1776610874.000000
+Z9 !s107 D:/FPGA/Project/ContestFPGA/src/sync_debounce.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/sync_debounce.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vdebounce_button
+R0
+!i10b 1
+!s100 fLDWkBAILZP]Y9h9R`W@`0
+R1
+IhH[=gM6oF=1RgL]fl@<GQ0
+R2
+R3
+R4
+R5
+R6
+!i122 7
+L0 2 36
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vmy_dff_en
+R0
+!i10b 1
+!s100 QVojV7Ae>5HL31i6]FjIj0
+R1
+IFCjO5E0]M5cohzZ@^71Y92
+R2
+R3
+R4
+R5
+R6
+!i122 7
+L0 61 6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtb_disable
+R0
+!i10b 1
+!s100 P:N9b0G<>:B47N_gmA@M<3
+R1
+IFNH;@h3]Ac6JLcj5mCYD42
+R2
+R3
+w1776609154
+8D:/FPGA/Project/ContestFPGA/src/tb_disable.v
+FD:/FPGA/Project/ContestFPGA/src/tb_disable.v
+!i122 8
+L0 5 97
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA/Project/ContestFPGA/src/tb_disable.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_disable.v|
+!i113 1
+R11
+R12
+vtb_disable_to_enable
+R0
+!i10b 1
+!s100 c7<ezJY;OjY<aD8iT<Qfn3
+R1
+Il:J:4YRgZN>=mmG2=46OP1
+R2
+R3
+w1776609622
+8D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v
+FD:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v
+!i122 9
+L0 5 87
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v|
+!i113 1
+R11
+R12
+vtb_normal_kick
+R0
+!i10b 1
+!s100 d;knQ]56LoG1l1I68l[eV3
+R1
+I3M0LJE<UAf[=nC1NBDDJY1
+R2
+R3
+w1776609521
+8D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v
+FD:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v
+!i122 10
+L0 5 96
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v|
+!i113 1
+R11
+R12
+vtb_timeout
+R0
+!i10b 1
+!s100 01BjUnl5e=g<8P0@h0b^n2
+R1
+I14bbHScTcK@j3`4@Fgm]K3
+R2
+R3
+w1776610867
+8D:/FPGA/Project/ContestFPGA/src/tb_timeout.v
+FD:/FPGA/Project/ContestFPGA/src/tb_timeout.v
+!i122 11
+L0 3 114
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA/Project/ContestFPGA/src/tb_timeout.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_timeout.v|
+!i113 1
+R11
+R12
+vwatchdog_core
+Z13 !s110 1776610875
+!i10b 1
+!s100 Z0gU:[cg>dJ3gADfCoGN<1
+R1
+I3ZcFHM2b@2f2zo=^^LTV_1
+R2
+R3
+w1776609004
+8D:/FPGA/Project/ContestFPGA/src/watchdog_core.v
+FD:/FPGA/Project/ContestFPGA/src/watchdog_core.v
+!i122 12
+L0 2 97
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA/Project/ContestFPGA/src/watchdog_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/watchdog_core.v|
+!i113 1
+R11
+R12
+vwatchdog_top
+R13
+!i10b 1
+!s100 doo<LLL5oK>j9Z2l`617K3
+R1
+IJW53W=UM6hAa7YRzUjW`L0
+R2
+R3
+w1776590436
+8D:/FPGA/Project/ContestFPGA/src/watchdog_main.v
+FD:/FPGA/Project/ContestFPGA/src/watchdog_main.v
+!i122 13
+L0 1 48
+R7
+r1
+!s85 0
+31
+!s108 1776610875.000000
+!s107 D:/FPGA/Project/ContestFPGA/src/watchdog_main.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/watchdog_main.v|
+!i113 1
+R11
+R12
