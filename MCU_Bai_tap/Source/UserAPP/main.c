@@ -56,7 +56,7 @@ void EEPROM_Save_Alarm(void) {
     UT_DelayNms(10);
 }
 
-// --- HAM DIEU KHIEN COI BANG PWM CHUAN ---
+// --- HAM DIEU KHIEN COI BANG PWM ---
 void Buzzer_Task(void) {
     // Bao thuc keu 5s/chu ky (0.5s ON - 0.5s OFF) [cite: 31]
     if (alarm_ring_ms > 0) {
