@@ -38,7 +38,7 @@ Hệ thống được chia thành các mô-đun phân cấp để tối ưu hoá
 
 ### 3.2. Mô phỏng ngõ ra Open-Drain của TPS3431
 *(Yêu cầu theo đề bài 4.3)*
-Trong dự án này, em lựa chọn phương pháp đơn giản hoá để thiết kế ngõ ra cho tín hiệu WDO và ENOUT. Thay vì sử dụng chân `inout` và trạng thái trở kháng cao (`1'bz`) để mô phỏng ngõ ra Open-Drain vật lý, em sử dụng ngõ ra **Push-Pull** tiêu chuẩn của FPGA để xuất tín hiệu. Tuy nhiên, em vẫn đảm bảo tuân thủ tuyệt đối quy ước logic của chip TPS3431:
+Trong dự án này, nhóm lựa chọn phương pháp đơn giản hoá để thiết kế ngõ ra cho tín hiệu WDO và ENOUT. Thay vì sử dụng chân `inout` và trạng thái trở kháng cao (`1'bz`) để mô phỏng ngõ ra Open-Drain vật lý, nhóm sử dụng ngõ ra **Push-Pull** tiêu chuẩn của FPGA để xuất tín hiệu. Tuy nhiên, nhóm vẫn đảm bảo tuân thủ tuyệt đối quy ước logic của chip TPS3431:
 * **WDO (Active-Low):** Chủ động xuất mức 0 (`1'b0`) khi xảy ra lỗi Timeout (tWD > 1600ms) để kéo sáng LED báo lỗi, và xuất mức 1 (`1'b1`) ở trạng thái bình thường.
     * *Quy ước: LED sáng là hệ thống bình thường; LED tắt là hệ thống bị timeout.*
 * **ENOUT:** Xuất logic hợp lệ (1 hoặc 0) theo đúng giản đồ thời gian quy định để điều khiển LED trạng thái.
@@ -60,7 +60,7 @@ Hệ thống giao tiếp với phần mềm PC qua cấu trúc gói tin (Frame) 
 * **Tập lệnh hỗ trợ:**
     * `0x01` (WRITE_REG): Ghi đè cấu hình thời gian (tWD, tRST...).
     * `0x02` (READ_REG): Truy xuất giá trị thanh ghi nội bộ.
-    * `0x03` (KICK): Lệnh "Đá chó" (Software Kick). Mạch trả về chuỗi `OKOK`.
+    * `0x03` (KICK): Lệnh "kick" (Software Kick). Mạch trả về chuỗi `OKOK`.
     * `0x04` (GET_STATUS): Báo cáo tình trạng sức khỏe hệ thống (Mạch đang bật/tắt, có lỗi hay không).
 
 **Tủ thanh ghi (Register Map)**
@@ -79,7 +79,7 @@ Bản đồ thanh ghi quy định các địa chỉ cấu hình và trạng thá
 ## 5. Kịch bản Kiểm chứng (Testbenches)
 Dự án đính kèm 5 file Testbench giả lập môi trường thực tế (Real-time simulation) với đầy đủ thông số delay:
 
-1. `tb_normal_kick.v`: Giả lập hệ thống khoẻ mạnh, định kỳ "đá chó" (Kick) mỗi 1 giây. Kết quả: WDO luôn giữ mức 1 an toàn.
+1. `tb_normal_kick.v`: Giả lập hệ thống khoẻ mạnh, định kỳ "Kick" mỗi 1 giây. Kết quả: WDO luôn giữ mức 1 an toàn.
 2. `tb_timeout.v`: Giả lập lỗi treo máy. Hệ thống bỏ đói Watchdog. Kết quả: WDO sụp xuống 0 chính xác ở mốc 1.6 giây, và tự phục hồi sau 200ms (tRST).
 3. `tb_disable.v`: Kịch bản vô hiệu hoá (EN = 1). Dù không có tín hiệu Kick qua 1.6 giây, WDO vẫn không báo lỗi do Watchdog đang ngủ.
 4. `tb_disable_to_enable.v`: Đánh thức FSM từ trạng thái IDLE sang MONITORING thành công và kích hoạt báo lỗi WDO chính xác.
@@ -130,3 +130,62 @@ Dự án đính kèm 5 file Testbench giả lập môi trường thực tế (Re
 * `TX (USB To TTL)`   --> Pin 40 (IOT26B) của FPGA (`rx`)
 * `RX (USB To TTL)`   --> Pin 39 (IOT26A) của FPGA (`tx`)
 * `GND (USB To TTL)`  --> Chân GND của Tang Nano 4K
+
+---
+
+## 9. Cách chạy demo trên board
+
+### 9.1. Demo bằng Nút nhấn vật lý (Manual Test)
+**Quy ước:**
+* LED trên board (LED1): Tín hiệu WDO, LED sáng biểu thị hệ thống hoạt động bình thường, LED tắt biểu thị hệ thống bị timeout.
+* LED ngoài (LED2): Tín hiệu ENOUT, LED tắt biểu thị hệ thống chưa hoạt động, LED sáng biểu thị hệ thống đang hoạt động.
+* Nút nhấn KEY2: Tín hiệu EN, khi chưa nhấn thì hệ thống chưa hoạt động, nhấn **giữ** để kích hoạt hệ thống (active-low).
+* Nút nhấn KEY1: Tín hiệu kick (WDI, active-low), nhấn để kick.
+
+**Các bước test:**
+* **Test normal kick**: Nhấn giữ KEY2, LED2 sẽ sáng, nhấn nhả KEY1 để kick (các lần kick cách nhau khoảng t < 1.6s).
+* **Test timeout**: Nhấn giữ KEY2, LED2 sẽ sáng, cứ để như thế sẽ thấy LED1 nhấp nháy cứ sau khoảng 1.6s.
+* **Test disable**: Không làm gì trên board cả, sẽ thấy LED1 luôn sáng.
+
+### 9.2. Demo bằng giao tiếp UART (Software Test)
+**Các bước chuẩn bị:**
+* Chạy phần mềm Hercules (`Documents/hercules_3-2-8.exe`).
+* Kết nối USB To TTL với board Tang Nano 4K như sơ đồ ở Mục 8.
+* Mở Device Manager trên máy tính kiểm tra xem mạch USB To TTL nhận COM mấy.
+* Cấu hình các thông số trên Hercules như hình dưới *(chú ý cổng COM của bạn có thể sẽ khác)*:  
+  ![](Documents/Serial.png)
+* Chuột phải vào màn hình trắng của Hercules, chọn **HEX Enable**.
+* Ở phần Send (phía dưới), tích chọn vào ô vuông **HEX** để phần mềm hiểu đây là mã Hex. Sau đó điền dữ liệu theo format `[0x55] [CMD] [ADDR] [LEN] [DATA...] [CHK]`.
+
+**Các kịch bản kiểm thử (Test Cases):**
+Dưới đây là 4 kịch bản cơ bản nhất. Bạn có thể copy trực tiếp các chuỗi Hex này, dán vào ô Send và nhấn nút Send:
+
+**1. Lệnh GET_STATUS (Kiểm tra sức khỏe hệ thống)**
+* **Chức năng:** Yêu cầu mạch báo cáo trạng thái (Đang bật/tắt, chân WDO đang ở mức logic mấy).
+* **Chuỗi gửi đi:** `55 04 00 00 04`
+* **Phản hồi kỳ vọng:** `{55} {04} {00} {04} {00} {00} {00} {08} {08}`
+* *(Giải thích: Cụm Data `{08}` tương đương `0000_1000` nhị phân, nghĩa là Bit 3 (WDO) đang bằng 1 - Hệ thống đang ở trạng thái an toàn).*
+
+**2. Lệnh WRITE_REG (Ghi cấu hình Timeout thành 2000ms)**
+* **Chức năng:** Ghi đè thời gian tWD_ms (Địa chỉ `0x04`) thành 2000ms (Số 2000 hệ Hex là `00 00 07 D0`).
+* **Chuỗi gửi đi:** `55 01 04 04 00 00 07 D0 D6`
+* **Phản hồi kỳ vọng:** `{55} {01} {04} {04} {4F} {4B} {4F} {4B} {01}`
+* *(Giải thích: Dải byte `{4F} {4B} {4F} {4B}` chính là mã ASCII của chữ **OKOK**. Mạch báo hiệu đã ghi vào thanh ghi thành công).*
+
+**3. Lệnh READ_REG (Đọc truy xuất lại cấu hình Timeout)**
+* **Chức năng:** Kiểm tra chéo xem lệnh GHI ở trên đã thực sự được lưu vào tủ thanh ghi của phần cứng hay chưa.
+* **Chuỗi gửi đi:** `55 02 04 00 06`
+* **Phản hồi kỳ vọng:** `{55} {02} {04} {04} {00} {00} {07} {D0} {D5}`
+* *(Giải thích: Mạch xuất trả lại chính xác 4 byte `{00} {00} {07} {D0}` (2000ms) minh chứng cho chức năng lưu trữ cấu hình động hoạt động hoàn hảo).*
+
+**4. Lệnh KICK (Kick phần mềm)**
+* **Chức năng:** Gửi tín hiệu nhịp tim qua giao thức UART để reset bộ đếm thời gian.
+* **Chuỗi gửi đi:** `55 03 00 00 03`
+* **Phản hồi kỳ vọng:** `{55} {03} {00} {04} {4F} {4B} {4F} {4B} {07}` *(Mạch báo nhận OKOK).*
+
+> **Note:**
+> * Dữ liệu có màu **Hồng (Magenta)** là lệnh do PC phát đi (TX).
+> * Dữ liệu có màu **Đen/Xám** là phản hồi do mạch FPGA trả về (RX).
+> * Việc bật tính năng **Hex Enable** giúp các byte phản hồi được đặt gọn gàng trong dấu ngoặc nhọn `{}` thay vì bị phần mềm ép dịch thành các ký tự lỗi font chữ.
+
+
