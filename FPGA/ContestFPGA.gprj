@@ -10,7 +10,14 @@
         <File path="src/tb_disable_to_enable.v" type="file.verilog" enable="1"/>
         <File path="src/tb_normal_kick.v" type="file.verilog" enable="1"/>
         <File path="src/tb_timeout.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_uart.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_engine.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_frame_parser.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_frame_responder.v" type="file.verilog" enable="1"/>
         <File path="src/watchdog_core.v" type="file.verilog" enable="1"/>
         <File path="src/watchdog_main.v" type="file.verilog" enable="1"/>
+        <File path="src/ContestFPGA.cst" type="file.cst" enable="1"/>
+        <File path="src/ContestFPGA.sdc" type="file.sdc" enable="1"/>
+        <File path="src/ContestFPGA.rao" type="file.gao" enable="1"/>
     </FileList>
 </Project>

@@ -2,31 +2,47 @@
  "Device" : "GW1NSR-4C",
  "Files" : [
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/sync_debounce.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/sync_debounce.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/watchdog_core.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/watchdog_main.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/tb_disable.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/tb_timeout.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v",
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_disable_to_enable.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_normal_kick.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_timeout.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v",
    "Type" : "verilog"
   }
  ],
@@ -34,8 +50,8 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/FPGA/Project/ContestFPGA/impl/temp/rtl_parser.result",
- "Top" : "",
+ "ResultFile" : "D:/FPGA/Project/Contest2026/FPGA/impl/temp/rtl_parser.result",
+ "Top" : "watchdog_top",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }

@@ -1,13 +1,91 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\sync_debounce.v'
-Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\tb_normal_kick.v'
-Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\watchdog_core.v'
-Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\watchdog_main.v'
-Analyzing Verilog file 'D:\FPGA\Project\ContestFPGA\src\tb_disable.v'
-Compiling module 'tb_disable'("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":3)
-WARN  (EX2629) : Delay control is not supported for synthesis("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":29)
-ERROR (EX3718) : Loop count limit of 2000 was exceeded, forever loop never breaks("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":29)
-WARN  (EX3780) : Using initial value of 'clk' since it is never assigned("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":30)
-Module 'tb_disable' remains a black box due to errors in its contents("D:\FPGA\Project\ContestFPGA\src\tb_disable.v":3)
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\sync_debounce.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\uart_frame_parser.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\uart_frame_responder.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\watchdog_core.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\watchdog_main.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\tb_disable.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\tb_disable_to_enable.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\tb_normal_kick.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\tb_timeout.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\src\tb_uart.v'
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
+Analyzing included file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
+Analyzing included file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_expression.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing included file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_parameter.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing Verilog file 'D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\gw_jtag.v'
+Analyzing Verilog file 'D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
+WARN  (EX3073) : Port 'core_wdi_src' remains unconnected for this instance("D:\FPGA\Project\Contest2026\FPGA\src\watchdog_main.v":91)
+Compiling module 'watchdog_top'("D:\FPGA\Project\Contest2026\FPGA\src\watchdog_main.v":1)
+Compiling module 'debounce_button'("D:\FPGA\Project\Contest2026\FPGA\src\sync_debounce.v":1)
+Compiling module 'clock_enable(DEBOUNCE_TIME_MS=15)'("D:\FPGA\Project\Contest2026\FPGA\src\sync_debounce.v":42)
+WARN  (EX3791) : Expression size 20 truncated to fit in target size 19("D:\FPGA\Project\Contest2026\FPGA\src\sync_debounce.v":55)
+Compiling module 'my_dff_en'("D:\FPGA\Project\Contest2026\FPGA\src\sync_debounce.v":63)
+Compiling module 'uart_rx(BAUD_RATE=115200)'("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":1)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":53)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":59)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":64)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":74)
+Compiling module 'frame_parser'("D:\FPGA\Project\Contest2026\FPGA\src\uart_frame_parser.v":1)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\FPGA\Project\Contest2026\FPGA\src\uart_frame_parser.v":89)
+Compiling module 'uart_frame_responder'("D:\FPGA\Project\Contest2026\FPGA\src\uart_frame_responder.v":1)
+Compiling module 'uart_tx(BAUD_RATE=115200)'("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":85)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":124)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":134)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":138)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\FPGA\Project\Contest2026\FPGA\src\uart_engine.v":149)
+Compiling module 'watchdog_core'("D:\FPGA\Project\Contest2026\FPGA\src\watchdog_core.v":1)
+Compiling module 'gw_gao'("D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+Compiling module 'GW_JTAG'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\gw_jtag.v":1)
+Compiling module '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Compiling module '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Compiling module '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Extracting RAM for identifier '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Compiling module '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
+Compiling module '**'("D:\FPGA\Tools\Gowin\Gowin_V1.9.12.02_SP1_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Trying to combine GAO to RTL design
+NOTE  (EX0101) : Current top module is "watchdog_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\ContestFPGA.vg" completed
+[100%] Generate report file "D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\ContestFPGA_syn.rpt.html" completed
 GowinSynthesis finish

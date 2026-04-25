@@ -1,18 +1,19 @@
-// 1. Khai báo parameter trong dấu #()
 module debounce_button #(
     parameter CLK_FREQ = 27_000_000,   
-    parameter DEBOUNCE_TIME_MS = 10    
+    parameter DEBOUNCE_TIME_MS = 15    
 )(
-    input clk, 
-    input pb_1, 
+    input wire clk, 
+    input wire pb_1, // Nút nhấn vật lý (Active-Low: 0 = Bấm)
     
-    // Thêm 2 ngõ ra phân biệt rõ ràng:
-    output pb_level, // Tín hiệu trạng thái giữ mức (Active-Low giống nút thật)
-    output pb_pulse  // Tín hiệu xung 20ms báo có nhịp bấm (Active-High)
+    // Đã đổi tên ngõ ra để hiện rõ chức năng và mức logic:
+    output wire pb_level_high, // Trạng thái giữ mức (Active-High: 1 = Đang bấm)
+    output wire pb_pulse_low   // Xung chớp nhoáng (Active-Low: 0 = Vừa bấm xuống)
 );
     wire slow_clk_en;
     wire Q1, Q2, Q0;
-    wire n_pb_1 = ~pb_1; // Nút nhấn Active-Low -> Đảo thành Active-High
+    
+    // Nút nhấn Active-Low -> Đảo thành Active-High (1 = Bấm) để đưa vào DFF
+    wire n_pb_1 = ~pb_1; 
     
     clock_enable #(
         .CLK_FREQ(CLK_FREQ),
@@ -26,13 +27,14 @@ module debounce_button #(
     my_dff_en d1(clk, slow_clk_en, Q0, Q1);
     my_dff_en d2(clk, slow_clk_en, Q1, Q2);
     
-    // 1. Dành cho nút EN: Trả về trạng thái ổn định.
-    // Vì n_pb_1 là active-high, Q2 là active-high. Ta đảo ngược lại (~Q2) để trả về Active-Low.
-    assign pb_level = ~Q2; 
+    // 1. Dành cho nút EN (Active-High):
+    // Q2 đang lưu trạng thái 1 khi bấm. Trả thẳng Q2 ra ngoài.
+    assign pb_level_high = Q2; 
 
-    // 2. Dành cho nút KICK: Tạo xung báo cạnh lên (khi người dùng bấm xuống).
-    // Bằng 1 CHỈ KHI: nhịp trước đó chưa bấm (Q2=0) VÀ nhịp này đang bấm (Q1=1).
-    assign pb_pulse = ~Q1 | Q2; 
+    // 2. Dành cho nút KICK (Active-Low):
+    // Bằng 0 CHỈ KHI: nhịp trước đó chưa bấm (Q2=0) VÀ nhịp này đang bấm (Q1=1).
+    // Phép toán: ~1 | 0 = 0 | 0 = 0.
+    assign pb_pulse_low = ~Q1 | Q2; 
     
 endmodule
 // ======================================================= //
@@ -44,7 +46,7 @@ module clock_enable #(
     input clk, 
     output slow_clk_en
 );
-    // 3. Dùng localparam để tính toán HẰNG SỐ lúc biên dịch phần mềm
+    // Dùng localparam để tính toán HẰNG SỐ lúc biên dịch phần mềm
     localparam MAX_COUNT = (CLK_FREQ / 1000) * DEBOUNCE_TIME_MS - 1;
     
     reg [$clog2(MAX_COUNT + 1)-1:0] counter = 0;

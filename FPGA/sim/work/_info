@@ -10,41 +10,41 @@ z2
 cModel Technology
 dD:/FPGA/Tools
 vclock_enable
-Z0 !s110 1776610874
+Z0 !s110 1777107085
 !i10b 1
-!s100 1z7F1Bo9^>SNGKcnGF>4T3
+!s100 ?C^C;P2X@`N:YGG4fP`b63
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IA`DD07oZUkFIf[Tai1LUQ3
+IFOBg30VGY]bYK^ZUFTjod0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dD:/FPGA/Project/ContestFPGA/sim
-Z4 w1776590056
-Z5 8D:/FPGA/Project/ContestFPGA/src/sync_debounce.v
-Z6 FD:/FPGA/Project/ContestFPGA/src/sync_debounce.v
-!i122 7
-L0 40 18
+Z3 dD:/FPGA/Project/Contest2026/FPGA/sim
+Z4 w1777103993
+Z5 8D:/FPGA/Project/Contest2026/FPGA/src/sync_debounce.v
+Z6 FD:/FPGA/Project/Contest2026/FPGA/src/sync_debounce.v
+!i122 34
+L0 42 18
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1776610874.000000
-Z9 !s107 D:/FPGA/Project/ContestFPGA/src/sync_debounce.v|
-Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/sync_debounce.v|
+Z8 !s108 1777107084.000000
+Z9 !s107 D:/FPGA/Project/Contest2026/FPGA/src/sync_debounce.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/sync_debounce.v|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vdebounce_button
 R0
 !i10b 1
-!s100 fLDWkBAILZP]Y9h9R`W@`0
+!s100 L[C=hMUQ2BSaNL]FTY67D3
 R1
-IhH[=gM6oF=1RgL]fl@<GQ0
+IW[jOmigVgRAVKUclGK7^]1
 R2
 R3
 R4
 R5
 R6
-!i122 7
-L0 2 36
+!i122 34
+L0 1 39
 R7
 r1
 !s85 0
@@ -55,19 +55,42 @@ R10
 !i113 1
 R11
 R12
+vframe_parser
+R0
+!i10b 1
+!s100 ZzCV6CbBK`Kf;9GG4CNI>3
+R1
+IzfP=]k]nO@U>dP13RfNl^3
+R2
+R3
+w1777104117
+8D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v
+FD:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v
+!i122 43
+L0 1 126
+R7
+r1
+!s85 0
+31
+Z13 !s108 1777107085.000000
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v|
+!i113 1
+R11
+R12
 vmy_dff_en
 R0
 !i10b 1
-!s100 QVojV7Ae>5HL31i6]FjIj0
+!s100 g3F>6cF10651oTUW2QW843
 R1
-IFCjO5E0]M5cohzZ@^71Y92
+IL;c;[4`TPSe?]FETnPAO@3
 R2
 R3
 R4
 R5
 R6
-!i122 7
-L0 61 6
+!i122 34
+L0 63 6
 R7
 r1
 !s85 0
@@ -81,138 +104,230 @@ R12
 vtb_disable
 R0
 !i10b 1
-!s100 P:N9b0G<>:B47N_gmA@M<3
+!s100 jmS]NDBN2;D;8l=i:K=6H1
 R1
-IFNH;@h3]Ac6JLcj5mCYD42
+I^2FC0=f^`Rb8_jmXD0K?a2
 R2
 R3
-w1776609154
-8D:/FPGA/Project/ContestFPGA/src/tb_disable.v
-FD:/FPGA/Project/ContestFPGA/src/tb_disable.v
-!i122 8
-L0 5 97
+w1776962512
+8D:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v
+FD:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v
+!i122 35
+L0 3 70
 R7
 r1
 !s85 0
 31
-R8
-!s107 D:/FPGA/Project/ContestFPGA/src/tb_disable.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_disable.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v|
 !i113 1
 R11
 R12
 vtb_disable_to_enable
 R0
 !i10b 1
-!s100 c7<ezJY;OjY<aD8iT<Qfn3
+!s100 QmQRzLeZaB`;fdoEgXn981
 R1
-Il:J:4YRgZN>=mmG2=46OP1
+I91Z2GP2aYLmZob8f@]Cl01
 R2
 R3
-w1776609622
-8D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v
-FD:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v
-!i122 9
-L0 5 87
+w1776962239
+8D:/FPGA/Project/Contest2026/FPGA/src/tb_disable_to_enable.v
+FD:/FPGA/Project/Contest2026/FPGA/src/tb_disable_to_enable.v
+!i122 36
+L0 3 61
 R7
 r1
 !s85 0
 31
-R8
-!s107 D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_disable_to_enable.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/tb_disable_to_enable.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/tb_disable_to_enable.v|
 !i113 1
 R11
 R12
 vtb_normal_kick
 R0
 !i10b 1
-!s100 d;knQ]56LoG1l1I68l[eV3
+!s100 W02@=l;25UF;<CnMDQJg_1
 R1
-I3M0LJE<UAf[=nC1NBDDJY1
+I2EcB1:HE?CDz]HN;ZzM;d1
 R2
 R3
-w1776609521
-8D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v
-FD:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v
-!i122 10
-L0 5 96
+w1776962221
+8D:/FPGA/Project/Contest2026/FPGA/src/tb_normal_kick.v
+FD:/FPGA/Project/Contest2026/FPGA/src/tb_normal_kick.v
+!i122 37
+L0 3 72
 R7
 r1
 !s85 0
 31
-R8
-!s107 D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_normal_kick.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/tb_normal_kick.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/tb_normal_kick.v|
+!i113 1
+R11
+R12
+vtb_system_uart
+R0
+!i10b 1
+!s100 @W]@UWX[UHQIME7UV3XCO2
+R1
+I2>GZ[SoRzPhiP3;A1o2@L1
+R2
+R3
+w1777106585
+8D:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v
+FD:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v
+!i122 41
+L0 3 142
+R7
+r1
+!s85 0
+31
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v|
 !i113 1
 R11
 R12
 vtb_timeout
 R0
 !i10b 1
-!s100 01BjUnl5e=g<8P0@h0b^n2
+!s100 _AK1HaZ`>oKLEbRU<H68W3
 R1
-I14bbHScTcK@j3`4@Fgm]K3
+IfBVM0IMlaXo?3]i=cRFkP0
 R2
 R3
-w1776610867
-8D:/FPGA/Project/ContestFPGA/src/tb_timeout.v
-FD:/FPGA/Project/ContestFPGA/src/tb_timeout.v
-!i122 11
-L0 3 114
+w1776962231
+8D:/FPGA/Project/Contest2026/FPGA/src/tb_timeout.v
+FD:/FPGA/Project/Contest2026/FPGA/src/tb_timeout.v
+!i122 38
+L0 3 78
 R7
 r1
 !s85 0
 31
-R8
-!s107 D:/FPGA/Project/ContestFPGA/src/tb_timeout.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/tb_timeout.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/tb_timeout.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/tb_timeout.v|
+!i113 1
+R11
+R12
+vuart_frame_responder
+R0
+!i10b 1
+!s100 mA;GDJGPnhLcei9GXK^9P1
+R1
+IzR;[3EY>iUB9b]iV`lM7c1
+R2
+R3
+w1777058572
+8D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v
+FD:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v
+!i122 44
+L0 1 165
+R7
+r1
+!s85 0
+31
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v|
+!i113 1
+R11
+R12
+vuart_rx
+R0
+!i10b 1
+!s100 [<nAMIZl>=NKbG@_2EO@l0
+R1
+IYaTz1Qfi7iR8U`dk`8F=W2
+R2
+R3
+Z14 w1777104006
+Z15 8D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v
+Z16 FD:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v
+!i122 42
+L0 1 83
+R7
+r1
+!s85 0
+31
+R13
+Z17 !s107 D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v|
+!i113 1
+R11
+R12
+vuart_tx
+R0
+!i10b 1
+!s100 AHB_7SiznGb14?LcY]g8c2
+R1
+IM0dHRznmG;Oc`AQ975JHC2
+R2
+R3
+R14
+R15
+R16
+!i122 42
+L0 85 73
+R7
+r1
+!s85 0
+31
+R13
+R17
+R18
 !i113 1
 R11
 R12
 vwatchdog_core
-Z13 !s110 1776610875
+R0
 !i10b 1
-!s100 Z0gU:[cg>dJ3gADfCoGN<1
+!s100 bNgH<B^4WDVhEiIYdWM@e3
 R1
-I3ZcFHM2b@2f2zo=^^LTV_1
+IWYa;k=HSBTbT_@fjNgi422
 R2
 R3
-w1776609004
-8D:/FPGA/Project/ContestFPGA/src/watchdog_core.v
-FD:/FPGA/Project/ContestFPGA/src/watchdog_core.v
-!i122 12
-L0 2 97
+w1777004153
+8D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v
+FD:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v
+!i122 39
+L0 1 94
 R7
 r1
 !s85 0
 31
-R8
-!s107 D:/FPGA/Project/ContestFPGA/src/watchdog_core.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/watchdog_core.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v|
 !i113 1
 R11
 R12
 vwatchdog_top
-R13
+R0
 !i10b 1
-!s100 doo<LLL5oK>j9Z2l`617K3
+!s100 lm0Za7J3@[62@[DU38]GO1
 R1
-IJW53W=UM6hAa7YRzUjW`L0
+IY4Lm4RjKQk0gJl80BVMhL1
 R2
 R3
-w1776590436
-8D:/FPGA/Project/ContestFPGA/src/watchdog_main.v
-FD:/FPGA/Project/ContestFPGA/src/watchdog_main.v
-!i122 13
-L0 1 48
+w1777049395
+8D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v
+FD:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v
+!i122 40
+L0 1 132
 R7
 r1
 !s85 0
 31
-!s108 1776610875.000000
-!s107 D:/FPGA/Project/ContestFPGA/src/watchdog_main.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/ContestFPGA/src/watchdog_main.v|
+R13
+!s107 D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v|
 !i113 1
 R11
 R12
