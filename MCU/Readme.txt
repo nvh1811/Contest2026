@@ -1,1 +1,0 @@
-https://github.com/nvh1811/Contest2026/blob/main/MCU_Bai_tap/README.md
