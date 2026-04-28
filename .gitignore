@@ -1,4 +1,5 @@
-FPGA/sim/watchdog_transition.vcd
 FPGA/sim/watchdog_timeout.vcd
-FPGA/sim/watchdog_realtime.vcd
-FPGA/sim/watchdog_disable.vcd
+FPGA/sim/watchdog_normal.vcd
+FPGA/sim/watchdog_dis_to_en.vcd
+*.zip
+*.exe

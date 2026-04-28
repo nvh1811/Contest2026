@@ -1,0 +1,19 @@
+-d D:\FPGA\Project\Contest2026\FPGA\impl\gwsynthesis\ContestFPGA.vg
+-p GW1NSR-4C-QFN48P-7
+-pn GW1NSR-LV4CQN48PC7/I6
+-cst D:\FPGA\Project\Contest2026\FPGA\src\ContestFPGA.cst
+-cfg D:\FPGA\Project\Contest2026\FPGA\impl\pnr\device.cfg
+-sdc D:\FPGA\Project\Contest2026\FPGA\src\ContestFPGA.sdc
+-gao_crc 1010000010110000
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-rtl_gao

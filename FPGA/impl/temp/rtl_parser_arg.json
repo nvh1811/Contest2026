@@ -6,26 +6,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_disable.v",
    "Type" : "verilog"
   },
@@ -43,6 +23,26 @@
   },
   {
    "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/tb_uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_engine.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_parser.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/uart_frame_responder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_core.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/FPGA/Project/Contest2026/FPGA/src/watchdog_main.v",
    "Type" : "verilog"
   }
  ],

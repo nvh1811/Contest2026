@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="watchdog_top" T_Register="668(0)" T_Alu="152(0)" T_Lut="970(0)" T_MULT18X18="1(0)" T_MULTALU36X18="2(0)" T_ALU54D="2(0)" T_Bsram="2(0)">
+ <SubModule name="gw_gao_inst_0" Register="296" Alu="15" Lut="438" Bsram="2" T_Register="296(296)" T_Alu="15(15)" T_Lut="438(438)" T_Bsram="2(2)"/>
+ <SubModule name="deb_en" T_Register="22(0)" T_Alu="18(0)" T_Lut="12(0)">
+  <SubModule name="u1" Register="19" Alu="18" Lut="11" T_Register="19(19)" T_Alu="18(18)" T_Lut="11(11)"/>
+  <SubModule name="d0" Register="1" Lut="1" T_Register="1(1)" T_Lut="1(1)"/>
+  <SubModule name="d1" Register="1" T_Register="1(1)"/>
+  <SubModule name="d2" Register="1" T_Register="1(1)"/>
+ </SubModule>
+ <SubModule name="deb_wdi" T_Register="22(0)" T_Alu="18(0)" T_Lut="12(0)">
+  <SubModule name="u1" Register="19" Alu="18" Lut="11" T_Register="19(19)" T_Alu="18(18)" T_Lut="11(11)"/>
+  <SubModule name="d0" Register="1" Lut="1" T_Register="1(1)" T_Lut="1(1)"/>
+  <SubModule name="d1" Register="1" T_Register="1(1)"/>
+  <SubModule name="d2" Register="1" T_Register="1(1)"/>
+ </SubModule>
+ <SubModule name="u_rx" Register="32" Lut="56" T_Register="32(32)" T_Lut="56(56)"/>
+ <SubModule name="u_parser" Register="174" Alu="8" Lut="93" T_Register="174(174)" T_Alu="8(8)" T_Lut="93(93)"/>
+ <SubModule name="u_responder" Register="57" Lut="198" T_Register="57(57)" T_Lut="198(198)"/>
+ <SubModule name="u_tx" Register="31" Lut="48" T_Register="31(31)" T_Lut="48(48)"/>
+ <SubModule name="wd_core" Register="34" Alu="93" Lut="113" MULT18X18="1" MULTALU36X18="2" ALU54D="2" T_Register="34(34)" T_Alu="93(93)" T_Lut="113(113)" T_MULT18X18="1(1)" T_MULTALU36X18="2(2)" T_ALU54D="2(2)"/>
+</Module>
